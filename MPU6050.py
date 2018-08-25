@@ -279,7 +279,7 @@ class MPU6050:
 
 
    def convertData(self,ListData):
-      ShortData = struct.unpack(">hhhhhhh", buffer(bytearray(ListData)))
+      ShortData = struct.unpack(">hhhhhhh", memoryview(bytearray(ListData)))
       #lets create the Data Class
       AccData = MPU6050Data()
 

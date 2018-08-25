@@ -33,23 +33,23 @@ while True:
      #wait until new data available
      while (mpu6050.readStatus() & 1)==0 :
        pass
- 
+
      # read the accelerometer
      C = mpu6050.readData()
 
      #calculate new force
-     CurrentForce = math.sqrt( (C.Gx - I.Gx) * ( C.Gx - I.Gx) + 
+     CurrentForce = math.sqrt( (C.Gx - I.Gx) * ( C.Gx - I.Gx) +
                                (C.Gy - I.Gy) * ( C.Gy - I.Gy) +
                                (C.Gz - I.Gz) * ( C.Gz - I.Gz))
 
      if CurrentForce > PeakForce :
-        PeakForce = CurrentForce  
+        PeakForce = CurrentForce
 
-   
+
   if PeakForce > Threshold :
     if not(ShakeFlag) :
         ShakeFlag = True
-        print "Vibration detected ", PeakForce, "G"
+        print("Vibration detected ", PeakForce, "G")
   else:
     ShakeFlag= False
-     
+
