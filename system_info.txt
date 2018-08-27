@@ -1,0 +1,475 @@
+fftw2_info:
+customize UnixCCompiler
+  libraries rfftw,fftw not found in ['/usr/local/lib', '/usr/lib', '/usr/lib/arm-linux-gnueabihf']
+  fftw2 not found
+  NOT AVAILABLE
+
+openblas_lapack_info:
+customize UnixCCompiler
+customize UnixCCompiler
+  libraries openblas not found in ['/usr/local/lib', '/usr/lib', '/usr/lib/arm-linux-gnueabihf']
+  NOT AVAILABLE
+
+lapack_atlas_3_10_threads_info:
+Setting PTATLAS=ATLAS
+customize UnixCCompiler
+  libraries tatlas,tatlas not found in /usr/local/lib
+customize UnixCCompiler
+  libraries lapack_atlas not found in /usr/local/lib
+customize UnixCCompiler
+  libraries tatlas,tatlas not found in /usr/lib/atlas-base
+customize UnixCCompiler
+customize UnixCCompiler
+  libraries tatlas,tatlas not found in /usr/lib
+customize UnixCCompiler
+customize UnixCCompiler
+  libraries tatlas,tatlas not found in /usr/lib/arm-linux-gnueabihf
+customize UnixCCompiler
+  libraries lapack_atlas not found in /usr/lib/arm-linux-gnueabihf
+<class 'numpy.distutils.system_info.lapack_atlas_3_10_threads_info'>
+  NOT AVAILABLE
+
+lapack_atlas_info:
+customize UnixCCompiler
+  libraries lapack_atlas,f77blas,cblas,atlas not found in /usr/local/lib
+customize UnixCCompiler
+  libraries lapack_atlas not found in /usr/local/lib
+customize UnixCCompiler
+customize UnixCCompiler
+customize UnixCCompiler
+<class 'numpy.distutils.system_info.lapack_atlas_info'>
+customize UnixCCompiler
+get_default_fcompiler: matching types: '['gnu95', 'intel', 'lahey', 'pg', 'absoft', 'nag', 'vast', 'compaq', 'intele', 'intelem', 'gnu', 'g95', 'pathf95', 'nagfor']'
+customize Gnu95FCompiler
+Found executable /usr/bin/gfortran
+customize Gnu95FCompiler
+customize Gnu95FCompiler using config
+compiling '_configtest.c':
+
+/* This file is generated from numpy/distutils/system_info.py */
+void ATL_buildinfo(void);
+int main(void) {
+  ATL_buildinfo();
+  return 0;
+}
+
+C compiler: arm-linux-gnueabihf-gcc -pthread -DNDEBUG -g -fwrapv -O2 -Wall -Wstrict-prototypes -g -fdebug-prefix-map=/build/python3.5-RUbMX3/python3.5-3.5.3=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -fPIC
+
+compile options: '-c'
+arm-linux-gnueabihf-gcc: _configtest.c
+arm-linux-gnueabihf-gcc -pthread _configtest.o -L/usr/lib/atlas-base -llapack_atlas -lf77blas -lcblas -latlas -o _configtest
+ATLAS version 3.10.3 built by root on Thu Aug 25 09:31:13 UTC 2016:
+   UNAME    : Linux plugwash.raspbian.lan 3.2.0-4-mx5 #1 Debian 3.2.39-2 armv7l GNU/Linux
+   INSTFLG  : -1 0 -a 1 -l 1
+   ARCHDEFS : -DATL_OS_Linux -DATL_ARCH_GENERIC -DATL_GAS_ARM
+   F2CDEFS  : -DAdd_ -DF77_INTEGER=int -DStringSunStyle
+   CACHEEDGE: 65536
+   F77      : /usr/bin/gfortran, version GNU Fortran (Raspbian 6.1.1-11+rpi1) 6.1.1 20160802
+   F77FLAGS : -O -fPIC
+   SMC      : /usr/bin/gcc-6, version gcc-6 (Raspbian 6.1.1-11+rpi1) 6.1.1 20160802
+   SMCFLAGS : -O -fomit-frame-pointer -fPIC
+   SKC      : /usr/bin/gcc-6, version gcc-6 (Raspbian 6.1.1-11+rpi1) 6.1.1 20160802
+   SKCFLAGS : -O -fomit-frame-pointer -fPIC
+success!
+removing: _configtest.c _configtest.o _configtest.o.d _configtest
+customize UnixCCompiler
+customize UnixCCompiler
+customize UnixCCompiler
+  FOUND:
+    include_dirs = ['/usr/include/atlas']
+    libraries = ['lapack', 'lapack_atlas', 'f77blas', 'cblas', 'atlas', 'lapack_atlas', 'f77blas', 'cblas']
+    language = f77
+    define_macros = [('ATLAS_INFO', '"\\"3.10.3\\""')]
+    library_dirs = ['/usr/lib/atlas-base/atlas', '/usr/lib/atlas-base']
+
+gdk_info:
+Found executable /usr/bin/pkg-config
+  NOT AVAILABLE
+
+openblas_info:
+customize UnixCCompiler
+customize UnixCCompiler
+  libraries openblas not found in ['/usr/local/lib', '/usr/lib', '/usr/lib/arm-linux-gnueabihf']
+  NOT AVAILABLE
+
+sfftw_threads_info:
+customize UnixCCompiler
+  libraries srfftw_threads,sfftw_threads not found in ['/usr/local/lib', '/usr/lib', '/usr/lib/arm-linux-gnueabihf']
+  sfftw threads not found
+  NOT AVAILABLE
+
+dfftw_threads_info:
+customize UnixCCompiler
+  libraries drfftw_threads,dfftw_threads not found in ['/usr/local/lib', '/usr/lib', '/usr/lib/arm-linux-gnueabihf']
+  dfftw threads not found
+  NOT AVAILABLE
+
+atlas_3_10_info:
+customize UnixCCompiler
+  libraries satlas,satlas not found in /usr/local/lib
+customize UnixCCompiler
+  libraries lapack_atlas not found in /usr/local/lib
+customize UnixCCompiler
+  libraries satlas,satlas not found in /usr/lib/atlas-base
+customize UnixCCompiler
+customize UnixCCompiler
+  libraries satlas,satlas not found in /usr/lib
+customize UnixCCompiler
+customize UnixCCompiler
+  libraries satlas,satlas not found in /usr/lib/arm-linux-gnueabihf
+customize UnixCCompiler
+  libraries lapack_atlas not found in /usr/lib/arm-linux-gnueabihf
+<class 'numpy.distutils.system_info.atlas_3_10_info'>
+  NOT AVAILABLE
+
+blas_info:
+customize UnixCCompiler
+customize UnixCCompiler
+C compiler: arm-linux-gnueabihf-gcc -pthread -DNDEBUG -g -fwrapv -O2 -Wall -Wstrict-prototypes -g -fdebug-prefix-map=/build/python3.5-RUbMX3/python3.5-3.5.3=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -fPIC
+
+creating /tmp/tmp9tcz_x7c/tmp
+creating /tmp/tmp9tcz_x7c/tmp/tmp9tcz_x7c
+compile options: '-I/usr/local/include -I/usr/include -c'
+arm-linux-gnueabihf-gcc: /tmp/tmp9tcz_x7c/source.c
+arm-linux-gnueabihf-gcc -pthread /tmp/tmp9tcz_x7c/tmp/tmp9tcz_x7c/source.o -lcblas -o /tmp/tmp9tcz_x7c/a.out
+customize UnixCCompiler
+  FOUND:
+    libraries = ['cblas', 'blas']
+    library_dirs = ['/usr/lib']
+    language = c
+    include_dirs = ['/usr/local/include', '/usr/include']
+    define_macros = [('HAVE_CBLAS', None)]
+
+fft_opt_info:
+fftw3_info:
+customize UnixCCompiler
+  libraries fftw3 not found in ['/usr/local/lib', '/usr/lib', '/usr/lib/arm-linux-gnueabihf']
+  fftw3 not found
+  NOT AVAILABLE
+
+dfftw_info:
+customize UnixCCompiler
+  libraries drfftw,dfftw not found in ['/usr/local/lib', '/usr/lib', '/usr/lib/arm-linux-gnueabihf']
+  dfftw not found
+  NOT AVAILABLE
+
+djbfft_info:
+  NOT AVAILABLE
+
+  NOT AVAILABLE
+
+gdk_pixbuf_xlib_2_info:
+  NOT AVAILABLE
+
+mkl_info:
+customize UnixCCompiler
+  libraries mkl_rt not found in ['/usr/local/lib', '/usr/lib', '/usr/lib/arm-linux-gnueabihf']
+  NOT AVAILABLE
+
+gdk_x11_2_info:
+  NOT AVAILABLE
+
+blas_src_info:
+  NOT AVAILABLE
+
+_numpy_info:
+  NOT AVAILABLE
+
+atlas_threads_info:
+Setting PTATLAS=ATLAS
+customize UnixCCompiler
+  libraries ptf77blas,ptcblas,atlas not found in /usr/local/lib
+customize UnixCCompiler
+  libraries lapack_atlas not found in /usr/local/lib
+customize UnixCCompiler
+  libraries ptf77blas,ptcblas,atlas not found in /usr/lib/atlas-base
+customize UnixCCompiler
+customize UnixCCompiler
+  libraries ptf77blas,ptcblas,atlas not found in /usr/lib
+customize UnixCCompiler
+customize UnixCCompiler
+  libraries ptf77blas,ptcblas,atlas not found in /usr/lib/arm-linux-gnueabihf
+customize UnixCCompiler
+  libraries lapack_atlas not found in /usr/lib/arm-linux-gnueabihf
+<class 'numpy.distutils.system_info.atlas_threads_info'>
+  NOT AVAILABLE
+
+atlas_blas_info:
+customize UnixCCompiler
+get_default_fcompiler: matching types: '['gnu95', 'intel', 'lahey', 'pg', 'absoft', 'nag', 'vast', 'compaq', 'intele', 'intelem', 'gnu', 'g95', 'pathf95', 'nagfor']'
+customize Gnu95FCompiler
+customize Gnu95FCompiler
+customize Gnu95FCompiler using config
+compiling '_configtest.c':
+
+/* This file is generated from numpy/distutils/system_info.py */
+void ATL_buildinfo(void);
+int main(void) {
+  ATL_buildinfo();
+  return 0;
+}
+
+C compiler: arm-linux-gnueabihf-gcc -pthread -DNDEBUG -g -fwrapv -O2 -Wall -Wstrict-prototypes -g -fdebug-prefix-map=/build/python3.5-RUbMX3/python3.5-3.5.3=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -fPIC
+
+compile options: '-c'
+arm-linux-gnueabihf-gcc: _configtest.c
+arm-linux-gnueabihf-gcc -pthread _configtest.o -L/usr/lib/atlas-base -lf77blas -lcblas -latlas -o _configtest
+ATLAS version 3.10.3 built by root on Thu Aug 25 09:31:13 UTC 2016:
+   UNAME    : Linux plugwash.raspbian.lan 3.2.0-4-mx5 #1 Debian 3.2.39-2 armv7l GNU/Linux
+   INSTFLG  : -1 0 -a 1 -l 1
+   ARCHDEFS : -DATL_OS_Linux -DATL_ARCH_GENERIC -DATL_GAS_ARM
+   F2CDEFS  : -DAdd_ -DF77_INTEGER=int -DStringSunStyle
+   CACHEEDGE: 65536
+   F77      : /usr/bin/gfortran, version GNU Fortran (Raspbian 6.1.1-11+rpi1) 6.1.1 20160802
+   F77FLAGS : -O -fPIC
+   SMC      : /usr/bin/gcc-6, version gcc-6 (Raspbian 6.1.1-11+rpi1) 6.1.1 20160802
+   SMCFLAGS : -O -fomit-frame-pointer -fPIC
+   SKC      : /usr/bin/gcc-6, version gcc-6 (Raspbian 6.1.1-11+rpi1) 6.1.1 20160802
+   SKCFLAGS : -O -fomit-frame-pointer -fPIC
+success!
+removing: _configtest.c _configtest.o _configtest.o.d _configtest
+customize UnixCCompiler
+customize UnixCCompiler
+  FOUND:
+    include_dirs = ['/usr/include/atlas']
+    libraries = ['f77blas', 'cblas', 'atlas', 'f77blas', 'cblas']
+    language = c
+    define_macros = [('HAVE_CBLAS', None), ('ATLAS_INFO', '"\\"3.10.3\\""')]
+    library_dirs = ['/usr/lib/atlas-base']
+
+x11_info:
+customize UnixCCompiler
+  libraries X11 not found in ['/usr/lib', '/usr/lib/arm-linux-gnueabihf']
+  NOT AVAILABLE
+
+umfpack_info:
+customize UnixCCompiler
+  libraries umfpack not found in ['/usr/local/lib', '/usr/lib', '/usr/lib/arm-linux-gnueabihf']
+  NOT AVAILABLE
+
+accelerate_info:
+  NOT AVAILABLE
+
+lapack_atlas_threads_info:
+Setting PTATLAS=ATLAS
+customize UnixCCompiler
+  libraries lapack_atlas,ptf77blas,ptcblas,atlas not found in /usr/local/lib
+customize UnixCCompiler
+  libraries lapack_atlas not found in /usr/local/lib
+customize UnixCCompiler
+  libraries lapack_atlas,ptf77blas,ptcblas,atlas not found in /usr/lib/atlas-base
+customize UnixCCompiler
+customize UnixCCompiler
+  libraries lapack_atlas,ptf77blas,ptcblas,atlas not found in /usr/lib
+customize UnixCCompiler
+customize UnixCCompiler
+  libraries lapack_atlas,ptf77blas,ptcblas,atlas not found in /usr/lib/arm-linux-gnueabihf
+customize UnixCCompiler
+  libraries lapack_atlas not found in /usr/lib/arm-linux-gnueabihf
+<class 'numpy.distutils.system_info.lapack_atlas_threads_info'>
+  NOT AVAILABLE
+
+boost_python_info:
+  NOT AVAILABLE
+
+openblas_clapack_info:
+customize UnixCCompiler
+customize UnixCCompiler
+  libraries openblas,lapack not found in ['/usr/local/lib', '/usr/lib', '/usr/lib/arm-linux-gnueabihf']
+  NOT AVAILABLE
+
+gdk_2_info:
+  NOT AVAILABLE
+
+sfftw_info:
+customize UnixCCompiler
+  libraries srfftw,sfftw not found in ['/usr/local/lib', '/usr/lib', '/usr/lib/arm-linux-gnueabihf']
+  sfftw not found
+  NOT AVAILABLE
+
+xft_info:
+  NOT AVAILABLE
+
+blas_opt_info:
+blas_mkl_info:
+customize UnixCCompiler
+  libraries mkl_rt not found in ['/usr/local/lib', '/usr/lib', '/usr/lib/arm-linux-gnueabihf']
+  NOT AVAILABLE
+
+blis_info:
+customize UnixCCompiler
+  libraries blis not found in ['/usr/local/lib', '/usr/lib', '/usr/lib/arm-linux-gnueabihf']
+  NOT AVAILABLE
+
+atlas_3_10_blas_threads_info:
+Setting PTATLAS=ATLAS
+customize UnixCCompiler
+  libraries tatlas not found in ['/usr/local/lib', '/usr/lib/atlas-base', '/usr/lib', '/usr/lib/arm-linux-gnueabihf']
+  NOT AVAILABLE
+
+atlas_3_10_blas_info:
+customize UnixCCompiler
+  libraries satlas not found in ['/usr/local/lib', '/usr/lib/atlas-base', '/usr/lib', '/usr/lib/arm-linux-gnueabihf']
+  NOT AVAILABLE
+
+atlas_blas_threads_info:
+Setting PTATLAS=ATLAS
+customize UnixCCompiler
+  libraries ptf77blas,ptcblas,atlas not found in ['/usr/local/lib', '/usr/lib/atlas-base', '/usr/lib', '/usr/lib/arm-linux-gnueabihf']
+  NOT AVAILABLE
+
+  FOUND:
+    include_dirs = ['/usr/include/atlas']
+    libraries = ['f77blas', 'cblas', 'atlas', 'f77blas', 'cblas']
+    language = c
+    define_macros = [('HAVE_CBLAS', None), ('ATLAS_INFO', '"\\"3.10.3\\""')]
+    library_dirs = ['/usr/lib/atlas-base']
+
+lapack_info:
+customize UnixCCompiler
+customize UnixCCompiler
+  FOUND:
+    libraries = ['lapack', 'lapack']
+    library_dirs = ['/usr/lib']
+    language = f77
+
+wx_info:
+Could not locate executable wx-config
+File not found: None. Cannot determine wx info.
+  NOT AVAILABLE
+
+Numeric_info:
+  NOT AVAILABLE
+
+numarray_info:
+  NOT AVAILABLE
+
+lapack_mkl_info:
+customize UnixCCompiler
+  libraries mkl_rt not found in ['/usr/local/lib', '/usr/lib', '/usr/lib/arm-linux-gnueabihf']
+  NOT AVAILABLE
+
+gtkp_2_info:
+  NOT AVAILABLE
+
+gtkp_x11_2_info:
+  NOT AVAILABLE
+
+f2py_info:
+  FOUND:
+    sources = ['/home/pi/.local/lib/python3.5/site-packages/numpy/f2py/src/fortranobject.c']
+    include_dirs = ['/home/pi/.local/lib/python3.5/site-packages/numpy/f2py/src']
+
+lapack_src_info:
+  NOT AVAILABLE
+
+numerix_info:
+numpy_info:
+  FOUND:
+    include_dirs = ['/home/pi/.local/lib/python3.5/site-packages/numpy/core/include']
+    define_macros = [('NUMPY_VERSION', '"\\"1.15.1\\""'), ('NUMPY', None)]
+
+  FOUND:
+    include_dirs = ['/home/pi/.local/lib/python3.5/site-packages/numpy/core/include']
+    define_macros = [('NUMPY_VERSION', '"\\"1.15.1\\""'), ('NUMPY', None)]
+
+atlas_info:
+customize UnixCCompiler
+  libraries f77blas,cblas,atlas not found in /usr/local/lib
+customize UnixCCompiler
+  libraries lapack_atlas not found in /usr/local/lib
+customize UnixCCompiler
+customize UnixCCompiler
+customize UnixCCompiler
+<class 'numpy.distutils.system_info.atlas_info'>
+customize UnixCCompiler
+customize UnixCCompiler
+customize UnixCCompiler
+  FOUND:
+    include_dirs = ['/usr/include/atlas']
+    libraries = ['lapack', 'f77blas', 'cblas', 'atlas', 'f77blas', 'cblas']
+    language = f77
+    define_macros = [('ATLAS_INFO', '"\\"3.10.3\\""')]
+    library_dirs = ['/usr/lib/atlas-base/atlas', '/usr/lib/atlas-base']
+
+gdk_pixbuf_2_info:
+  NOT AVAILABLE
+
+atlas_3_10_threads_info:
+Setting PTATLAS=ATLAS
+customize UnixCCompiler
+  libraries tatlas,tatlas not found in /usr/local/lib
+customize UnixCCompiler
+  libraries lapack_atlas not found in /usr/local/lib
+customize UnixCCompiler
+  libraries tatlas,tatlas not found in /usr/lib/atlas-base
+customize UnixCCompiler
+customize UnixCCompiler
+  libraries tatlas,tatlas not found in /usr/lib
+customize UnixCCompiler
+customize UnixCCompiler
+  libraries tatlas,tatlas not found in /usr/lib/arm-linux-gnueabihf
+customize UnixCCompiler
+  libraries lapack_atlas not found in /usr/lib/arm-linux-gnueabihf
+<class 'numpy.distutils.system_info.atlas_3_10_threads_info'>
+  NOT AVAILABLE
+
+agg2_info:
+  NOT AVAILABLE
+
+lapack_opt_info:
+  FOUND:
+    include_dirs = ['/usr/include/atlas']
+    libraries = ['lapack', 'f77blas', 'cblas', 'atlas', 'f77blas', 'cblas']
+    language = f77
+    define_macros = [('ATLAS_INFO', '"\\"3.10.3\\""')]
+    library_dirs = ['/usr/lib/atlas-base/atlas', '/usr/lib/atlas-base']
+
+fftw_threads_info:
+customize UnixCCompiler
+  libraries rfftw_threads,fftw_threads not found in ['/usr/local/lib', '/usr/lib', '/usr/lib/arm-linux-gnueabihf']
+  fftw threads not found
+  NOT AVAILABLE
+
+_pkg_config_info:
+  NOT AVAILABLE
+
+lapack_atlas_3_10_info:
+customize UnixCCompiler
+  libraries satlas,satlas not found in /usr/local/lib
+customize UnixCCompiler
+  libraries lapack_atlas not found in /usr/local/lib
+customize UnixCCompiler
+  libraries satlas,satlas not found in /usr/lib/atlas-base
+customize UnixCCompiler
+customize UnixCCompiler
+  libraries satlas,satlas not found in /usr/lib
+customize UnixCCompiler
+customize UnixCCompiler
+  libraries satlas,satlas not found in /usr/lib/arm-linux-gnueabihf
+customize UnixCCompiler
+  libraries lapack_atlas not found in /usr/lib/arm-linux-gnueabihf
+<class 'numpy.distutils.system_info.lapack_atlas_3_10_info'>
+  NOT AVAILABLE
+
+fftw_info:
+customize UnixCCompiler
+  libraries fftw3 not found in ['/usr/local/lib', '/usr/lib', '/usr/lib/arm-linux-gnueabihf']
+  fftw3 not found
+customize UnixCCompiler
+  libraries rfftw,fftw not found in ['/usr/local/lib', '/usr/lib', '/usr/lib/arm-linux-gnueabihf']
+  fftw2 not found
+  NOT AVAILABLE
+
+freetype2_info:
+  FOUND:
+    libraries = ['freetype']
+    include_dirs = ['/usr/include/freetype2']
+    define_macros = [('FREETYPE2_INFO', '"\\"18.3.12\\""'), ('FREETYPE2_VERSION_18_3_12', None)]
+
+amd_info:
+customize UnixCCompiler
+  libraries amd not found in ['/usr/local/lib', '/usr/lib', '/usr/lib/arm-linux-gnueabihf']
+  NOT AVAILABLE
+
+None
